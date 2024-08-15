@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.image-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 80%;
+}
+
+#responsive-image {
+    width: 40%;
+}
+
+@media (max-width 768px) {
+    .image-text-container{
+        flex-direction: column;
+    }
+    #responsive-image {
+        width: 100%;
+    }
+}
